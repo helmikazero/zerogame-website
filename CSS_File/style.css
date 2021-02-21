@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
+h2, h3{
+    color: #272343;
+}
+
+footer{
+    padding: 20px;
+    color: #272343;
+    background-color: #bae8e8;
+    text-align: center;
+    font-weight: bold;    
+}
+
+.profile header{
+    text-align: center;
+}
+
+.profile img{
+    width: 200px;
+}
+
+.featured-image{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+ }
+
+ .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #272343;
+    text-align: center;
+    color: white;
+ }
+
+ nav{
+    background-color: #e3f6f5;
+    padding: 7px;
+
+    position: sticky;
+    top: 0;
+}
+
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a:hover{
+    font-weight: bold;
+    color: rgb(28, 73, 94);
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
