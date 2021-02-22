@@ -6,7 +6,7 @@
         </title>
 
         <link rel="stylesheet" href="CSS_File\style.css">
-        <meta name="viewport" content="widht=device-widht-widht, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <!-- PERBATASAN  HEAD - BODY -->
     <body>
@@ -19,40 +19,48 @@
             </div>
 
             <nav>
-                <ul>
-                    <li><a href=""></a>OVERVIEW</li>
-                    <li>FEATURES</li>
-                    <li>DEVELOPMENT</li>
-                </ul>
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="#overview">OVERVIEW</a></li>
+                        <li><a href="#features">FEATURES</a></li>
+                        <li><a href="#development">DEVELOPMENT</a></li>
+                    </ul>
+                </div>
+                
             </nav>
         </header>
 
         <main>
-            <div class="flex-column">
+            <!-- <div class="flex-column">
                 <div class="flex-row">
                     <div class="minicontent"><img src="Image\zero_model.png" alt="zeroAudio" class="featured-image"></div> 
                     <div class="minicontent"><img src="Image\zero_model.png" alt="zeroAudio" class="featured-image"></div>
                     <div class="minicontent"><img src="Image\zero_model.png" alt="zeroAudio" class="featured-image"></div> 
                 </div>
-            </div>
+            </div> -->
+            <!-- <div class="flex-row" id="overview">
+                <div><img id="rotatingImage" src="Image\zero_model.png" alt="zeroAudio" class="featured-image"></div> 
+            </div> -->
+
+            <div id="overview"><img id="rotatingImage" src="Image\zeroFront.png" alt="zeroAudio" class="featured-image"></div> 
             <div id="content">
                 <!-- <img src="Image\zeroFront.png" alt="zeroPoster" class="featured-image"> -->
                 <article class="card">
                     <section>
-                        <h2 id="overview">
+                        <h2 >
                             OVERVIEW
                         </h2>
                         <!-- GIF OVERVIEW HERE <img src="Image\zeroFront.png" alt="zeroPoster" class="featured-image"> -->
-                        <p>
+                        <p id="features">
                             Game FPS Single Player dengan tema space dan survival. Atmosfer digambarkan dari unsur survival atau bertahan hidup di dunia dystopian tanpa gravitasi. Objektif pemain adalah untuk mengumpulkan item - item dan memperkaya diri.
                         </p>
                     </section>
-                    
+                
                 </article>
 
-                <article class="card">
+                <article class="card" >
                     <section>
-                        <h2>
+                        <h2 id="features">
                             FEATURES
                         </h2>
                         <p>
@@ -70,7 +78,7 @@
                             Modular Firearm
                         </h3>
                         <img src="Image\modularwep.gif" alt="zeromodular" class="featured-image">
-                        <p>
+                        <p id="development">
                             Pemain dilengkapi dengan senapan yang sangat modular. Dari bagian laras atau <em>barrel</em> , jenis peluru, dan <em>optical sight</em>  yang bisa diganti - ganti dengan 3 variasi untuk tiap bagiannya sesuai dengan kebutuhan pemain. Tentu saja, pemain dapat memodifikasi senaja ditengah - tengah permainan.
                         </p>
                     </section>
@@ -78,7 +86,7 @@
 
                 <article class="card">
                     <section>
-                        <h2>
+                        <h2 >
                             DEVELOPMENT
                         </h2>
                         <p>
@@ -88,8 +96,16 @@
                         
                     <section>
                         <h3>3D Modelling and Animating</h3>
-                        <img src="Image\zero_model.png" alt="zeroAudio" class="featured-image">
-                        <img src="Image\anim_reload.gif" alt="zeroAudio" class="featured-image">
+                        <div class="flex-row">
+                            <div class="content-inside">
+                                <img src="Image\zero_model.png" alt="zeroAudio" class="featured-image">
+                            </div>
+                            <div class="content-inside">
+                                <img src="Image\anim_reload.gif" alt="zeroAudio" class="featured-image">
+                            </div>
+                        </div>
+                        <!-- <img src="Image\zero_model.png" alt="zeroAudio" class="featured-image">
+                        <img src="Image\anim_reload.gif" alt="zeroAudio" class="featured-image"> -->
                         <p>
                             Seperti yang dilihat, game ini merupakan game 3D dengan gaya low poly. Proses nya dilakukan dengan software blender3D untuk modelling dan animating serta Substance Painter untuk texturing.
                         </p>
@@ -142,6 +158,8 @@
             </aside>
 
         </main>
+
+        <script src="JS_File\imageturn.js"></script>
     </body>
 
     <!-- PERBATASAN BODY - FOOTER -->
