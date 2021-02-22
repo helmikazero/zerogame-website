@@ -57,11 +57,12 @@ footer{
  }
 
  .jumbotron {
-    font-size: 20px;
+    font-size: 30px;
     padding: 60px;
     background-color: #272343;
     text-align: center;
     color: white;
+    font-weight: 700;
  }
 
  nav{
@@ -78,9 +79,20 @@ nav li{
     margin-right: 20px;
 }
 
+nav a{
+    font-size: 30px;
+    font-weight: 400;
+    color:black;
+    text-decoration-line: none;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 nav a:hover{
-    font-weight: bold;
-    color: rgb(28, 73, 94);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: black;
 }
 
 #content {
@@ -99,13 +111,7 @@ aside {
     flex-direction: column;
 
 
-    height: 400px;
-    margin: 0 auto;
-
-    background-color: #272343;
-    border: 2px solid black;
-    padding: 20px;
-    border-radius: 10px;
+    /* height: 400px; */
     margin: 0 auto;
 
 }
@@ -114,10 +120,29 @@ aside {
     display: flex;
 }
 
-.minicontent{
-    flex-basis: 33%;
+/* .pageimggroupcenter{
+    width: 900px;    
+} */
 
+.minicontent{
+    flex-basis: 33.3%;
     padding: 5px;
-    border: 1px solid black;
-    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
 }
+
+.content-inside{
+    flex-basis: 50%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1000px){
+    #content, aside{
+        width: 100%;
+        padding: 0;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+}
+
+
