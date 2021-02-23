@@ -34,7 +34,7 @@ footer{
 }
 
 .profile img{
-    width: 200px;
+    width: 100%;
 }
 
 .featured-image{
@@ -95,6 +95,7 @@ nav a:hover{
     font-weight: 600;
     color: rgb(255, 255, 255);
     background-color: black;
+    border-radius: 50px;
 }
 
 #content {
